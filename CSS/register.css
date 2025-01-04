@@ -1,0 +1,274 @@
+/* General styles */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container { /*the entire form box*/
+    display: flex;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);    
+}
+
+.form-section { /*controls the left side box*/
+    background-color: #d6d6d6;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+h1 { /*targets the Hello There text*/
+    margin-top: -30px;
+    font-family: Coolvetica;
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+label { /*targets the username, email, pass layout only*/
+    font-weight: 100px;
+    font-size: 16px;
+    font-family: Coolvetica;
+    margin-top: 10px; /*gap between each fill up form*/
+    display: block;
+}
+
+input { /*targets the inputs*/
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-family: Montserrat;
+}
+
+input:hover{
+    box-shadow: 0 0 0px #000;
+}
+
+.terms, .remember-me {
+    margin: 10px 0; /* Adjust spacing */
+    display: flex;
+    align-items: center;
+}
+
+.terms input, .remember-me input { /*targets the checkbox*/
+    width: 16px; /* Standard checkbox size */
+    height: 16px;
+    margin: 0 10px 0 0; /* Compact spacing */
+    padding: 0; /* Remove any default padding */
+    cursor: pointer;
+}
+
+.terms label, .remember-me label { /*targets the textt*/
+    font-size: 14px;
+    font-weight: normal; /* Reset font weight */
+    margin-top: -0px;
+    
+}
+
+.terms a { 
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.button { /*targets the call to action btn*/
+    margin: 20px auto 40px auto;
+    margin-top: 45px;
+    margin-left: 120px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: Coolvetica, sans-serif;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: 7px 7px 0px #BEBEBE;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+.info-section { /*controls the right side*/
+    background-color: black;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.info-section a { /*taregts all the anchor links in right side*/
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-section a:hover {
+    color: #ccc;
+}
+
+h2 { /*targets the info text*/
+    font-size: 40px;
+    font-family: Coolvetica;
+    font-weight: 100;
+    margin: 0;
+    margin-top: -30px;
+}
+
+.graphics { /*controls the position of shape*/
+    position: relative;
+    margin-top: 0px;
+    margin-left: 110px;
+}
+
+.square { /*controls the properties of shape*/
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.square.white { 
+    background-color: white;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.square.white:hover{
+    transform: translateY(-5px);
+}
+
+.square.gray {
+    background-color: gray;
+    left: 30px;
+    top: 25px;
+    transition: all 0.3s ease;
+}
+
+.square.gray:hover{
+    transform: translateY(5px);
+    
+}
+
+.toggle-btn { /*targets the page toggle btn*/
+    margin: 20px;
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 0px;
+    margin: 0 10px;
+}
+
+.toggle-btn:hover {
+    background-color: #888;
+}
+
+.toggle-btn.active {
+    background-color: #000;
+    color: white;
+}
+
+.form-toggle-links {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.form-toggle-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.form-toggle-links a:hover {
+    color: #ddd;
+}
+
+.footer-links { /*targets the footer*/
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: -25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+    font-size: 12px;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s ease;
+    font-family: Montserrat, sans-serif;
+}
+
+input:hover {
+    box-shadow: 0 0 4px #000;
+}
+
+label {
+    font-weight: normal; /* Reset font weight */
+    font-size: 16px;
+    font-family: Coolvetica, sans-serif;
+    margin-top: 10px;
+    display: block;
+}
+
+
+
+.form-content {
+    display: none;
+}
+.form-content.visible {
+    display: block;
+}
+#signup-form {
+    display: block;
+}
+#login-form {
+    display: none;
+}
